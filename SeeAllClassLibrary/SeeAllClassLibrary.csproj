@@ -69,6 +69,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IDatetimeRepository.cs" />
+    <Compile Include="Abstract\IDowntimeRepository.cs" />
     <Compile Include="Directories\Department.cs" />
     <Compile Include="Directories\Plant.cs" />
     <Compile Include="Directories\Point.cs" />
