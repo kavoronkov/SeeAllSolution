@@ -15,7 +15,7 @@ namespace SeeAllClassLibrary.Settings
         public int Cycle { get; set; }
         public bool Work { get; set; }
 
-        public int? PointId { get; set; }
+        public int PointId { get; set; }
         public virtual Point Point { get; set; }
     }
 }

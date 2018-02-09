@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SeeAllClassLibrary.Entities
 {
-    public class EFDbContext : DbContext
+    public class EFSeeAllContext : DbContext
     {
         public DbSet<Plant> Plants { get; set; }
         public DbSet<Workshop> Workshops { get; set; }

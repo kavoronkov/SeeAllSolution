@@ -1,4 +1,6 @@
 ﻿using Ninject;
+using SeeAllClassLibrary.Abstract;
+using SeeAllClassLibrary.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +31,10 @@ namespace SeeAllWebUI.Infrastructure
 
         private void AddBindings()
         {
-            // Здесь размещаются привязки
+            kernel.Bind<ISeeAllRepository>().To<EFSeeAllRepository>();
+            kernel.Bind<IDirectoriesRepository>().To<EFDirectoriesRepository>();
+            kernel.Bind<IModelsRepository>().To<EFModelsRepository>();
+            kernel.Bind<ISettingsRepository>().To<EFSettingsRepository>();
         }
     }
 }

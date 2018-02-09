@@ -16,7 +16,7 @@ namespace SeeAllClassLibrary.Settings
         public int DataBlockLimit { get; set; }
         public int DataBlockDatetime { get; set; }
 
-        public int? PointId { get; set; }
+        public int PointId { get; set; }
         public virtual Point Point { get; set; }
     }
 }

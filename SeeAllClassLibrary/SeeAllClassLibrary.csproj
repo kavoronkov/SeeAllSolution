@@ -69,16 +69,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IDatetimeRepository.cs" />
-    <Compile Include="Abstract\IDowntimeRepository.cs" />
+    <Compile Include="Abstract\IDirectoriesRepository.cs" />
+    <Compile Include="Abstract\IModelsRepository.cs" />
+    <Compile Include="Abstract\ISeeAllRepository.cs" />
+    <Compile Include="Abstract\ISettingsRepository.cs" />
     <Compile Include="Directories\Department.cs" />
     <Compile Include="Directories\Plant.cs" />
     <Compile Include="Directories\Point.cs" />
     <Compile Include="Directories\Workshop.cs" />
-    <Compile Include="Entities\EFDbContext.cs" />
+    <Compile Include="Entities\EFDirectoriesContext.cs" />
+    <Compile Include="Entities\EFModelsContext.cs" />
+    <Compile Include="Entities\EFSeeAllContext.cs" />
+    <Compile Include="Entities\EFSettingsContext.cs" />
     <Compile Include="Models\Datetime.cs" />
     <Compile Include="Models\Downtime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\EFDirectoriesRepository.cs" />
+    <Compile Include="Repositories\EFModelsRepository.cs" />
+    <Compile Include="Repositories\EFSeeAllRepository.cs" />
+    <Compile Include="Repositories\EFSettingsRepository.cs" />
     <Compile Include="Settings\PLCSettings.cs" />
     <Compile Include="Settings\SeeAllSettings.cs" />
   </ItemGroup>
@@ -86,5 +95,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

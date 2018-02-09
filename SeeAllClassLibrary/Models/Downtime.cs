@@ -12,7 +12,7 @@ namespace SeeAllClassLibrary.Models
         public int DowntimeId { get; set; }
         public DateTime DowntimeValue { get; set; }
 
-        public int? PointId { get; set; }
+        public int PointId { get; set; }
         public virtual Point Point { get; set; }
     }
 }

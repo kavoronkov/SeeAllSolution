@@ -11,7 +11,7 @@ namespace SeeAllClassLibrary.Directories
         public int DepartmentId { get; set; }
         public string DepartmentName { get; set; }
 
-        public int? WorkshopId { get; set; }
+        public int WorkshopId { get; set; }
         public virtual Workshop Workshop { get; set; }
 
         public virtual ICollection<Point> Points { get; set; }

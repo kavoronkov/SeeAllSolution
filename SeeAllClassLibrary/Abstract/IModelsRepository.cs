@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace SeeAllClassLibrary.Abstract
 {
-    public interface IDowntimeRepository
+    public interface IModelsRepository
     {
+        IEnumerable<Datetime> Datetimes { get; }
         IEnumerable<Downtime> Downtimes { get; }
     }
 }
