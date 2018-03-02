@@ -9,8 +9,12 @@ namespace SeeAllClassLibrary.Models
 {
     public class Downtime
     {
-        public int DowntimeId { get; set; }
-        public DateTime DowntimeValue { get; set; }
+        public long DowntimeId { get; set; }
+        public long DatetimeId { get; set; }
+        public string CycleTime { get; set; }
+        public string DowntimeValue { get; set; }
+        public bool? MicroDowntime { get; set; }
+        public bool? Transition { get; set; }
 
         public int PointId { get; set; }
         public virtual Point Point { get; set; }

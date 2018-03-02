@@ -9,7 +9,7 @@ namespace SeeAllClassLibrary.Models
 {
     public class Datetime
     {
-        public int DatetimeId { get; set; }
+        public long DatetimeId { get; set; }
         public DateTime DateTimeValue { get; set; }
 
         public int PointId { get; set; }

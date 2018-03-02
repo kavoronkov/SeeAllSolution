@@ -11,8 +11,8 @@ namespace SeeAllClassLibrary.Settings
     {
         public int PLCId { get; set; }
         public string PLCIp { get; set; }
-        public int RackCpu { get; set; }
-        public int SlotCpu { get; set; }
+        public int RackCPU { get; set; }
+        public int SlotCPU { get; set; }
         public int DataBlockLimit { get; set; }
         public int DataBlockDatetime { get; set; }
 
